@@ -4,7 +4,8 @@
   "description": "learn server slide render",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/woshicezai/learn_ssr/issues"
   },
-  "homepage": "https://github.com/woshicezai/learn_ssr#readme"
+  "homepage": "https://github.com/woshicezai/learn_ssr#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
