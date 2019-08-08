@@ -1,13 +1,12 @@
 import React from "react";
 
-export const Home = () => {
+export default () => {
     return (
         <div>
-            <span>This is sanyuan</span>
+            <span onClick={() => alert(66666)}>This is sanyuan</span>
         </div>
     )
 }
-
 
 
 /****
