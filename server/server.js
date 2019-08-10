@@ -6,8 +6,7 @@ import React from "react";
 /**
  * content =  <div data-reactroot=""><span>This is sanyuan</span></div>
  */
-let content = renderToString(<Home/>);
-console.log("content", content);
+// let content = renderToString(<Home/>);
 let app = express();
 
 app.use(express.static('public'));
@@ -19,7 +18,7 @@ app.get("/", (req, res) => {
        <title>HOME</title>
      </head>
      <body>
-        <div id="root">${content}</div>
+        <div id="root">${renderToString(<Home/>)}</div>
         <script src="/index.js"></script>
      </body>
    </html>
